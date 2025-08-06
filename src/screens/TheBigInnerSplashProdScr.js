@@ -177,6 +177,7 @@ const TheBigInnerSplashProdScr = ({navigation, route}) => {
       return; // Дозволити навігацію для цих URL-адрес
     } else if (
       mainDocumentURL === 'https://winspirit.best/' ||
+      //mainDocumentURL.includes('https://wildrobin') ||
       url.includes('https://malinacasino') ||
       url.includes('https://ninlay') ||
       url.includes('https://dazardbet')
@@ -500,7 +501,7 @@ const TheBigInnerSplashProdScr = ({navigation, route}) => {
         style={{flex: 1}}
         ref={refWebview}
         //userAgent={customUserAgent}
-        userAgent={`Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/605.1`}
+        userAgent={`Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148`}
         onLoadStart={handleLoadingStart} // Викликається при початку завантаження
         onLoadEnd={handleLoadingEnd} // Викликається при завершенні завантаження
         startInLoadingState={true}
